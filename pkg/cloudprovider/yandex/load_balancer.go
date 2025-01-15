@@ -32,7 +32,7 @@ const (
 	// ports.ProxyHealthzPort was not used here to avoid dependencies to k8s.io/kubernetes
 	// cloud provider which is required as part of the out-of-tree cloud provider efforts.
 	// TODO: use a shared constant once ports in pkg/cluster/ports are in a common external repo.
-	lbNodesHealthCheckPort = 10256
+	lbNodesHealthCheckPort = 10254
 )
 
 var kubeToYandexServiceProtoMapping = map[v1.Protocol]loadbalancer.Listener_Protocol{
